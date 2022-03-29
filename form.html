@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[type=text],input[type=email]{
+        background-color: rgb(154, 199, 199);
+        width:30%;
+    }
+    select{
+        background-color: rgb(154, 199, 199);
+        width:20%;
+    }
+    textarea{
+        background-color: rgb(154, 199, 199);
+       
+    }
+    button {
+  background-color: #04AA6D;
+  color: rgb(73, 103, 105);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+#ex{
+    background-color: rgb(136, 243, 243);
+}
+button:hover {
+       background-color: rgb(236, 57, 57);
+      }
+      input[type=email]:hover {
+       background-color: rgb(57, 106, 236);
+      }
+      input[type=text]:hover {
+       background-color: rgb(57, 105, 232);
+      }
+      select:hover {
+       background-color: rgb(57, 105, 236);
+      }
+      textarea:hover {
+       background-color: rgb(57, 106, 236);
+      }
+</style>
+<body id="ex">
+    <center><h1>SIGNIN</h1></center>
+    <form>
+      <label for="fname"><strong>First name:</strong></label><br>
+        <input type="text" value="First name" required><br><br>
+        <label for="lname"><strong>Last name:</strong></label><br>
+        <input type="text" value="Last name" required><br><br>
+        <label for="email"><strong>email:</strong></label><br>
+        <input type="email" value="email" required><br><br>
+        <label for="address"><strong>Address:</strong></label><br>
+        <textarea value="Address" rows="8" cols="50" ></textarea><br><br>
+        <label for="city"><strong>City:</strong></label><br>
+        <input type="text" value="city"><br><br>
+        <label for="city"><strong>Zip code</strong></label><br>
+        <input type="text" value="zipcode" min="6" max="6"><br><br>
+        <label for="state"><strong>State:</strong></label><br>
+        <select >
+            <option>Tamil Nadu</option>
+            <option>Kerala</option>
+
+        </select><br><br>
+        <label for="country"><strong>Country:</strong></label><br>
+        <select >
+            <option>India</option>
+            <option>Russia</option>
+
+        </select><br><br>
+        <label for="reg"><u><strong>Registration package</strong></u></label><br>
+        <input type="radio" name="1">standard registration($50USD)<br>
+        <input type="radio" name="1">premium registration($90USD)<br>
+        <input type="radio" name="1">corporate registration($200USD)<br><br>
+        <label for="reg"><u><strong>Accomodation package</strong></u></label><br>
+        <input type="radio" name="2">none<br>
+        <input type="radio" name="2">2 days in 3 star hotel($300USD)<br>
+        <input type="radio" name="2">2 days in 3 star hotel($550USD)<br>
+        <input type="checkbox" name="2"> I'm also buying the T-shirt of the event($10USD)<br><br>
+        <label for="reg"><u><strong>Discount</strong></u></label><br>
+        <input type="radio" name="2">Early bird discount(-$10USD)<br>
+        <input type="radio" name="2">Student dicount(-30%)<br>
+        <input type="radio" name="2">No thanks,I dont want a discount<br>
+        <input type="checkbox" name="3" required> I have read and agreed to the waiver<br>
+        <input type="checkbox" name="3" required> I have read and accept the <a href="https://www.hp.com/us-en/terms-of-sale.html">
+            Terms and conditions</a> and <a href="https://www.hp.com/us-en/privacy/privacy.html">Privacy policy</a><br><br>
+        
+        <div>
+            <button type="submit" style="color:rgb(252, 249, 249);"><strong>Sign Up</strong></button>
+        </div>
+
+
+    </form>
+
+</body>
+</html>
